@@ -63,15 +63,17 @@ h6 {
 .container {
   /* max-width: 1140px; */
   margin: 0 auto;
+  padding: 0 15px;
 }
 
-/*ssss*/
+
+
 
 /* Small */
 @media (min-width: 768px) {
   .container {
     width: 750px;
-  }  
+  }
 }
 
 /* Medium */
@@ -88,7 +90,4 @@ h6 {
   }
 }
 
-
-
-/*  */
 
