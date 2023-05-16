@@ -1,0 +1,104 @@
+.status_section h1 {
+  font-size: 6.4rem;
+  font-family: var(--main-font);
+  font-weight: 400;
+  max-width: 64.2rem;
+  margin-bottom: 11rem;
+}
+.card {
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  background: #f2f2f2;
+  width: 78rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  font-family: var(--main-font);
+}
+.cardInfo {
+  color: var(--text-color);
+}
+.cardInfo h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 3rem;
+}
+.cardInfo p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 1.8rem;
+}
+.btn-apply {
+  font-size: 1.5rem;
+  color: #ffffff;
+  font-weight: 500;
+  padding: 1rem 2rem;
+  background-color: var(--main-color);
+  border: none;
+  border-radius: 1rem;
+}
+
+.Test h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 4rem;
+  font-family: var(--main-font);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li,
+p {
+  padding-bottom: 1rem;
+}
+input[type="radio"] {
+  accent-color: var(--main-color);
+  /* height: 25px;
+  width: 25px;
+  margin-right: 20px; */
+}
+.Test p {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+}
+
+.answer-part {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 20px;
+  position: relative;
+}
+
+.answer-part h3 {
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}
+.answer-part label {
+  font-size: 2rem;
+  line-height: 1.6rem;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.answer-part span {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: var(--main-color);
+  display: grid;
+  place-content: center;
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+}
+
+.answer-part span i {
+  color: #fff;
+  font-size: 2rem;
+}
