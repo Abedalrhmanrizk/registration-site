@@ -56,7 +56,7 @@ h6 {
   display: flex;
 }
 
-.heddin {
+.hidden {
   display: none;
 }
 
@@ -65,7 +65,7 @@ h6 {
   margin: 0 auto;
   padding: 0 15px;
 }
-/*ssss*/
+
 
 /* Small */
 @media (min-width: 768px) {
