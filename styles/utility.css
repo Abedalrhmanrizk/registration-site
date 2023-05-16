@@ -43,6 +43,7 @@ select {
 
 
  p,
+p,
 h1,
 h2,
 h3,
@@ -80,8 +81,6 @@ h6 {
   .d-flex .col {
     width: 100%;
   }
-
-
 }
 
 
@@ -99,7 +98,6 @@ h6 {
   .container {
     width: 970px;
   }
-
 }
 
 /* Large */
@@ -108,5 +106,3 @@ h6 {
     width: 1170px;
   }
 }
-
-
