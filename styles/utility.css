@@ -56,7 +56,7 @@ h6 {
   display: flex;
 }
 
-.heddin {
+.hidden {
   display: none;
 }
 
@@ -64,8 +64,6 @@ h6 {
   /* max-width: 1140px; */
   margin: 0 auto;
 }
-<<<<<<< HEAD
-/*ssss*/
 
 /* Small */
 @media (min-width: 768px) {
@@ -88,7 +86,3 @@ h6 {
   }
 }
 
-=======
-
-/*  */
->>>>>>> 9d688f8e3b3083489026fa3dabbdfa3117ee74d8
