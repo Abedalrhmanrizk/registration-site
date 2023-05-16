@@ -63,8 +63,8 @@ h6 {
 .container {
   /* max-width: 1140px; */
   margin: 0 auto;
+  padding: 0 15px;
 }
-<<<<<<< HEAD
 /*ssss*/
 
 /* Small */
@@ -87,8 +87,3 @@ h6 {
     width: 1170px;
   }
 }
-
-=======
-
-/*  */
->>>>>>> 9d688f8e3b3083489026fa3dabbdfa3117ee74d8
