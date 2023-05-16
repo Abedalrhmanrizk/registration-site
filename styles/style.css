@@ -1,0 +1,53 @@
+.hero .col h1 {
+    font-family: var(--secondary-font);
+    font-size: 40px;
+    margin-bottom: 15%;
+}
+.hero .d-flex{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.hero .d-flex .col{
+    width: 500px;
+}
+ 
+.hero .col p {
+    font-size: 20px;
+    margin-bottom: 5%;
+    padding-left: 1rem;
+    position: relative;
+}
+
+.hero .col p::before {
+    content: "";
+    position: absolute;
+    background: var(--main-color);
+    height: 100%;
+    width: 2px;
+    left: 0;
+}
+
+.hero .col button {
+    padding: 1rem 3rem 1rem 3rem;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.hero .col button:nth-child(1) {
+    background: var(--linear-color);
+    color: white;
+}
+
+.hero .col button:nth-child(2) {
+    color: var(--secondary-color);
+    background-color: transparent;
+}
+
+.hero .col button:nth-child(2) i {
+    padding-right: 1rem;
+}
+ 
+ 

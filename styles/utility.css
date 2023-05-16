@@ -8,7 +8,7 @@
   --main-color: #01ff88;
   --secondary-color: #007aff;
   --text-color: #333;
-  --linear-color: linear-gradient(90deg, #1884ff 0%, #49cdff 100%);
+  --linear-color: linear-gradient(90deg, #1884ff 0%, #62d4fd 100%);
 }
 
 /* reset margin, padding and box sizing */
@@ -40,8 +40,9 @@ select {
   font: inherit;
 }
 
-/*8. Avoid text overflows*/
-p,
+8. Avoid text overflows*/
+
+/* p,
 h1,
 h2,
 h3,
@@ -65,13 +66,30 @@ h6 {
   margin: 0 auto;
   padding: 0 15px;
 }
+
 /*ssss*/
+
+
+/* Large */
+@media (max-width: 992px) {
+  .d-flex {
+    flex-wrap: wrap;
+  }
+
+  .d-flex .col {
+    width: 100%;
+  }
+
+
+}
 
 /* Small */
 @media (min-width: 768px) {
   .container {
     width: 750px;
-  }  
+  }
+
+
 }
 
 /* Medium */
@@ -79,6 +97,7 @@ h6 {
   .container {
     width: 970px;
   }
+
 }
 
 /* Large */
