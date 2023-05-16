@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 header {
     justify-content: space-between;
     align-items: center;
@@ -98,3 +99,244 @@ footer ul {
     }
   
 }
+=======
+<<<<<<< HEAD
+.hero .col h1 {
+    font-family: var(--secondary-font);
+    font-size: 40px;
+    margin-bottom: 15%;
+}
+.hero .d-flex{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.hero .d-flex .col{
+    width: 500px;
+}
+ 
+.hero .col p {
+    font-size: 20px;
+    margin-bottom: 5%;
+    padding-left: 1rem;
+    position: relative;
+}
+
+.hero .col p::before {
+    content: "";
+    position: absolute;
+    background: var(--main-color);
+    height: 100%;
+    width: 2px;
+    left: 0;
+}
+
+.hero .col button {
+    padding: 1rem 3rem 1rem 3rem;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.hero .col button:nth-child(1) {
+    background: var(--linear-color);
+    color: white;
+}
+
+.hero .col button:nth-child(2) {
+    color: var(--secondary-color);
+    background-color: transparent;
+}
+
+.hero .col button:nth-child(2) i {
+    padding-right: 1rem;
+}
+ 
+ 
+=======
+<<<<<<< HEAD
+/* START PROFILE INFO */
+.pro-info {
+  font-family: var(--main-font);
+  color: var(--text-color);
+  margin-bottom: 8rem;
+}
+.contents-prog {
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 8rem;
+}
+.circle {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background: var(--secondary-color);
+}
+.line {
+  background: #b9b9c3;
+  height: 1px;
+  width: 40px;
+}
+
+.pro-info h2 {
+  font-size: 6.4rem;
+  margin-bottom: 8.5rem;
+  font-weight: 400;
+}
+
+.info-form {
+  max-width: 1106px;
+}
+.pro-title {
+  font-size: 3.2rem;
+  margin-bottom: 1.6rem;
+}
+.pro-detials {
+  color: #575f6e;
+  font: size 16px;
+  font-weight: 300;
+}
+
+.agree-box {
+  margin-top: 3.2rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.6rem;
+  margin-bottom: 3.2rem;
+}
+
+.agree-box input {
+  height: 24px;
+  width: 24px;
+}
+
+.pro-info form input:focus {
+  outline-color: var(--main-color);
+}
+.agree-box a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+.pro-info form {
+  border: 1px solid #e2e3e5;
+  border-radius: 8px;
+  padding: 3.2rem;
+  margin-bottom: 8rem;
+}
+.pro-info form h5 {
+  font-size: 2rem;
+}
+
+.pro-info form p {
+  font-size: 1.2rem;
+  color: #575f6e;
+  margin-bottom: 3.2rem;
+}
+
+.pro-info form label {
+  font-size: 1.4rem;
+  display: block;
+  /* margin-bottom: 8px; */
+}
+
+.pro-info form input {
+  width: 100%;
+  height: 4.4rem;
+  border: none;
+  border-bottom: 1px solid #e2e4e5;
+  margin-bottom: 8px;
+  font-size: 1.5rem;
+  /* border-radius: 8px; */
+}
+
+.pro-info form + a {
+  padding: 12px 32px;
+  color: var(--main-color);
+  font-size: 1.6rem;
+  border: 1px solid var(--main-color);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 150px;
+}
+
+/* .pro-info form .end {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.pro-info form .end label {
+  display: block;
+} */
+/* END PROFILE INFO */
+=======
+/*start login page  */
+.container-login {
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.container-login img {
+    height: 500px;
+    width: 500px;
+}
+
+.login .container {
+    position: relative;
+}
+
+.container-login div:first-child {
+    width: 50%;
+}
+
+.container-login div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: var(--main-font);
+    gap: 7px;
+    font-size: 1.5rem;
+    width: 50%;
+}
+
+.container-login .text {
+    padding-bottom: 30px;
+}
+
+.container-login input {
+    padding: 10px;
+    border: 1px solid #eee;
+    /* position: relative; */
+    width: 80%;
+}
+/* .container-login i {
+    position: absolute;
+    color: #757575;
+    transform: translateY(-50%);
+    left: 10px;
+    
+} */
+
+.container-login .submit {
+    background-color: var(--main-color);
+    color: white;
+}
+
+.container-login .vector {
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    right: -150px;
+    bottom: -170px;
+}
+
+
+
+/*end login page  */
+>>>>>>> 4489eb9f19f2a56e41ee2af6be9ca7078a21d2d2
+>>>>>>> af570d4209e2d94359d171503758436504433480
+>>>>>>> 2647702ff5896288596317d2af6112877f4f01db

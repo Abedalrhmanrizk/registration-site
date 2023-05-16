@@ -8,7 +8,7 @@
   --main-color: #01ff88;
   --secondary-color: #007aff;
   --text-color: #333;
-  --linear-color: linear-gradient(90deg, #1884ff 0%, #49cdff 100%);
+  --linear-color: linear-gradient(90deg, #1884ff 0%, #62d4fd 100%);
 }
 
 /* reset margin, padding and box sizing */
@@ -40,8 +40,9 @@ select {
   font: inherit;
 }
 
-/*8. Avoid text overflows*/
-p,
+8. Avoid text overflows*/
+
+/* p,
 h1,
 h2,
 h3,
@@ -66,14 +67,40 @@ h6 {
   padding: 0 15px;
 }
 
+<<<<<<< HEAD
 
 
+=======
+<<<<<<< HEAD
+/*ssss*/
+=======
+>>>>>>> af570d4209e2d94359d171503758436504433480
+
+
+/* Large */
+@media (max-width: 992px) {
+  .d-flex {
+    flex-wrap: wrap;
+  }
+
+  .d-flex .col {
+    width: 100%;
+  }
+
+
+}
+>>>>>>> 2647702ff5896288596317d2af6112877f4f01db
 
 /* Small */
 @media (min-width: 768px) {
   .container {
     width: 750px;
   }
+<<<<<<< HEAD
+
+
+=======
+>>>>>>> af570d4209e2d94359d171503758436504433480
 }
 
 /* Medium */
@@ -81,6 +108,7 @@ h6 {
   .container {
     width: 970px;
   }
+
 }
 
 /* Large */
