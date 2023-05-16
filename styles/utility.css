@@ -63,7 +63,12 @@ h6 {
 .container {
   /* max-width: 1140px; */
   margin: 0 auto;
+  padding: 0 15px;
 }
+<<<<<<< HEAD
+=======
+/*ssss*/
+>>>>>>> 7e1e1f1e6a4a293eb4adb7bee948a851e3c93919
 
 /* Small */
 @media (min-width: 768px) {
@@ -84,5 +89,9 @@ h6 {
   .container {
     width: 1170px;
   }
+<<<<<<< HEAD
 }
 
+=======
+}
+>>>>>>> 7e1e1f1e6a4a293eb4adb7bee948a851e3c93919
