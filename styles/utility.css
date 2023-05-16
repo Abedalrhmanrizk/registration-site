@@ -57,7 +57,7 @@ h6 {
   display: flex;
 }
 
-.heddin {
+.hidden {
   display: none;
 }
 
@@ -67,7 +67,10 @@ h6 {
   padding: 0 15px;
 }
 
+<<<<<<< HEAD
 /*ssss*/
+=======
+>>>>>>> af570d4209e2d94359d171503758436504433480
 
 
 /* Large */
@@ -88,8 +91,11 @@ h6 {
   .container {
     width: 750px;
   }
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> af570d4209e2d94359d171503758436504433480
 }
 
 /* Medium */
