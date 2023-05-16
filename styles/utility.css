@@ -63,6 +63,7 @@ h6 {
 .container {
   /* max-width: 1140px; */
   margin: 0 auto;
+  padding: 0 15px;
 }
 /*ssss*/
 
@@ -86,5 +87,3 @@ h6 {
     width: 1170px;
   }
 }
-
-/*  */
