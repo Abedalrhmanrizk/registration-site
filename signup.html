@@ -16,7 +16,7 @@
       referrerpolicy="no-referrer"
     />
     <style></style>
-    <script src="./script.js" defer></script>
+    <script src="./js/singup.js" defer></script>
   </head>
   <body>
     <header class="container flex">
@@ -42,13 +42,17 @@
               <p>Sign Up to get started</p>
             </div>
             <input type="text" placeholder="Full Name" id="name" />
+            <span class="error-name"></span>
             <input type="email" placeholder="Email Address" id="email" />
+            <span class="error-email"></span>
             <input type="password" placeholder="Password" id="password" />
+            <span class="error-password"></span>
             <input
               type="password"
               placeholder="Repeat password"
               id="re-password"
             />
+            <span class="error-passwRep"></span>
             <input type="submit" class="submit" value="Register" id="submit" />
             <!-- <img src="images/Vector 5.svg" class="vector" alt="" /> -->
           </div>

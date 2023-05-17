@@ -8,6 +8,16 @@ const passwordInputRegi = document.getElementById("password");
 const rePassword = document.getElementById("re-password");
 const submitBtnRegi = document.getElementById("submit");
 
+
+//get input field
+let username = document.querySelector("#name");
+let email = document.querySelector("#email");
+let password = document.querySelector("#password");
+let passwordRep = document.querySelector("#passwRep");
+let submit = document.querySelector("#submit");
+
+
+
 // LOGIN ELEMENTS
 const emailInputLog = document.getElementById("email-log");
 const passwordInputLog = document.getElementById("password-log");
