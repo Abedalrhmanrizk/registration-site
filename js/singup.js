@@ -1,5 +1,5 @@
-// localStorage.setItem("username", "mkyong-100@yahoo.com");
-// localStorage.setItem("password", "Anj1G@de");
+// username => mkyong-100@yahoo.com 
+// password => gr3at@3wdsG 
 
 // REGISTRATION ELEMENTS
 const nameInput = document.getElementById("name");
@@ -11,8 +11,7 @@ const submitBtnRegi = document.getElementById("submit");
 
 // REGX CHECK
 let checkEmail = "[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,3}";
-let checkPass = "/^(?=.\d)(?=.[!@#$%^&])(?=.[a-z])(?=.*[A-Z]).{8,}$/";
-
+let checkPass = "^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*-]).{8,}$";
 
 // ERROR SPAN
 let spanName = document.querySelector(".error-name");
