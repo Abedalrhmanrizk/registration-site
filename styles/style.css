@@ -1,4 +1,9 @@
 /* START HEADER */
+*::selection {
+  background-color: var(--main-color);
+  color: #fff;
+}
+
 header {
   display: flex;
   justify-content: space-between;

@@ -20,90 +20,113 @@
   </head>
   <body>
     <header class="container">
-      <a href="" class="logo flex"> <img src="images/logo.svg" alt="logo">Quizzy</a>
-      <i class="fa-solid fa-bars "></i>
+      <a href="" class="logo flex">
+        <img src="images/logo.svg" alt="logo" />Quizzy</a
+      >
+      <i class="fa-solid fa-bars"></i>
       <nav class="nav">
         <ul>
-          <li><a href="#">it works?</a> </li>
+          <li><a href="#">it works?</a></li>
           <li><a href="#">Features</a></li>
           <li><a href="#">About us</a></li>
           <li><a href="#">Login</a></li>
         </ul>
       </nav>
     </header>
-  
-    
+
     <section class="Test">
       <div class="container">
-      <div class="quiz">
-        <h1>English test</h1>
-        <h3>Quiz NUMBER</h3>
-        <p>
-          Fill in the data for profile. It will take a couple of minutes. You
-          only need a passport
-        </p>
-        <div class="answer-part">
+        <div class="quiz">
+          <h1>English test</h1>
+          <h3>Quiz NUMBER</h3>
+          <p id="question">
+            Fill in the data for profile. It will take a couple of minutes. You
+            only need a passport
+          </p>
+          <div class="answer-part">
+            <ul>
+              <li>
+                <input
+                  type="radio"
+                  name="answer"
+                  id="a"
+                  class="answer"
+                  required
+                />
+                <label for="a" id="a_text">Question</label>
+              </li>
 
-          <ul>
-            <li>
-              <input
-                type="radio"
-                name="answer"
-                id="a"
-                class="answer"
-                required
-              />
-              <label for="a" id="a_text">Question</label>
-            </li>
-  
-            <li>
-              <input
-                type="radio"
-                name="answer"
-                id="b"
-                class="answer"
-                required
-              />
-              <label for="b" id="b_text">Question</label>
-            </li>
-  
-            <li>
-              <input
-                type="radio"
-                name="answer"
-                id="c"
-                class="answer"
-                required
-              />
-              <label for="c" id="c_text">Question</label>
-            </li>
-  
-            <li>
-              <input
-                type="radio"
-                name="answer"
-                id="d"
-                class="answer"
-                required
-              />
-              <label for="d" id="d_text">Question</label>
-            </li>
-           
-          </ul>
-          <span><i class="fa-solid fa-chevron-right"></i></span>
+              <li>
+                <input
+                  type="radio"
+                  name="answer"
+                  id="b"
+                  class="answer"
+                  required
+                />
+                <label for="b" id="b_text">Question</label>
+              </li>
+
+              <li>
+                <input
+                  type="radio"
+                  name="answer"
+                  id="c"
+                  class="answer"
+                  required
+                />
+                <label for="c" id="c_text">Question</label>
+              </li>
+
+              <li>
+                <input
+                  type="radio"
+                  name="answer"
+                  id="d"
+                  class="answer"
+                  required
+                />
+                <label for="d" id="d_text">Question</label>
+              </li>
+            </ul>
+            <span><i class="fa-solid fa-chevron-right next"></i></span>
+          </div>
+        </div>
       </div>
-      </div>
+
+      <a href="#"
+        >Go next <i class="fa-solid fa-arrow-right submit-page"></i
+      ></a>
     </section>
+
     <footer>
-      <div class=" footer container flex" id="footer">
-      <a href="" class="logo flex"> <img src="images/logo.svg" alt="logo">Quizzy</a>
-      <ul>
-        <li><a href=""><img src="images/dribbble.svg" alt="social media icons" ></a></li>
-        <li><a href=""><img src="images/twitter.svg" alt="social media icons" ></a></li>
-        <li><a href=""><img src="images/linkedin.svg" alt="social media icons" ></a></li>
-        <li><a href=""><img src="images/instagram.svg" alt="social media icons"></a></li>
-      </ul>
-    </div>
+      <div class="footer container flex" id="footer">
+        <a href="" class="logo flex">
+          <img src="images/logo.svg" alt="logo" />Quizzy</a
+        >
+        <ul>
+          <li>
+            <a href=""
+              ><img src="images/dribbble.svg" alt="social media icons"
+            /></a>
+          </li>
+          <li>
+            <a href=""
+              ><img src="images/twitter.svg" alt="social media icons"
+            /></a>
+          </li>
+          <li>
+            <a href=""
+              ><img src="images/linkedin.svg" alt="social media icons"
+            /></a>
+          </li>
+          <li>
+            <a href=""
+              ><img src="images/instagram.svg" alt="social media icons"
+            /></a>
+          </li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>
