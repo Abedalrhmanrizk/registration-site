@@ -90,6 +90,10 @@ h6 {
   .Test .quiz {
     max-width: 100% !important;
   }
+  .container-login div {
+    /* background-size: auto; */
+    width: 60% !important;
+  }
 }
 
 @media (max-width: 480px) {
@@ -105,5 +109,9 @@ h6 {
   }
   .Test .quiz {
     max-width: 100% !important;
+  }
+  .container-login div {
+    background-size: auto;
+    width: 100% !important;
   }
 }

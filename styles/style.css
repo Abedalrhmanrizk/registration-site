@@ -37,9 +37,15 @@ nav ul li a {
 }
 
 nav li:last-of-type a {
-  border: solid 1px var(--main-color);
-  color: var(--main-color);
+  border: solid 2px #fff;
+  color: #fff;
   padding: 1.3rem 3.3rem;
+  font-weight: 700;
+  transition: all 0.3s;
+}
+
+nav li:last-of-type a:hover {
+  background-color: var(--main-color);
 }
 
 header i {
@@ -115,7 +121,7 @@ header i {
 
 /* START FOOTER */
 footer {
-  background-color: #eee !important;
+  background-color: #fdfdfd !important;
 }
 
 .footer {
@@ -264,18 +270,18 @@ footer ul {
   position: relative;
 }
 
-.container-login div:last-child {
+/* .container-login div:last-child {
   max-width: 50%;
-}
+} */
 
-.container-login div:nth-child(1) {
+.container-login div {
   display: flex;
   flex-direction: column;
   justify-content: center;
   font-family: var(--main-font);
   gap: 7px;
   font-size: 1.5rem;
-  flex-basis: 60%;
+  width: 50%;
 }
 
 .container-login .text {
@@ -285,7 +291,6 @@ footer ul {
 .container-login input {
   padding: 10px;
   border: 1px solid #eee;
-  width: 80%;
 }
 
 .container-login .submit {
