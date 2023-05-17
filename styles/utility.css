@@ -8,11 +8,7 @@
   --main-color: #01ff88;
   --secondary-color: #007aff;
   --text-color: #333;
-  --linear-color: linear-gradient(
-    90deg,
-    #1884ff 0%,
-    #62d4fd 100%
-  );
+  --linear-color: linear-gradient(90deg, #1884ff 0%, #62d4fd 100%);
 }
 
 /* reset margin, padding and box sizing */
