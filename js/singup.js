@@ -1,5 +1,5 @@
-// localStorage.setItem("username", "mkyong-100@yahoo.com");
-// localStorage.setItem("password", "Anj1G@de");
+// username => mkyong-100@yahoo.com 
+// password => gr3at@3wdsG 
 
 // REGISTRATION ELEMENTS
 const nameInput = document.getElementById("name");
@@ -11,7 +11,7 @@ const submitBtnRegi = document.getElementById("submit");
 
 // REGX CHECK
 let checkEmail = "[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,3}";
-let checkPass = "^(?=.*[a-z])(?=.*[A-Z])(?=.*d)(?=.*[#$^+=!*()@%&]).{8,10}$";
+let checkPass = "^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*-]).{8,}$";
 
 // ERROR SPAN
 let spanName = document.querySelector(".error-name");
@@ -68,7 +68,7 @@ submitBtnRegi.addEventListener("click", (e) => {
                     // INSERT DATA
                     data.push(obj);
                     localStorage.setItem('Data', JSON.stringify(data));
-
+ 
                 } else {// VALIDATION CHECK PASSWORD === PASSWORDREP
                     let text = document.createTextNode("Passwords do not match");
                     error.appendChild(text);
