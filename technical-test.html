@@ -7,6 +7,7 @@
     <title>Home</title>
     <link rel="stylesheet" href="./styles/utility.css" />
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./technical-test.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -31,7 +32,49 @@
         </ul>
       </nav>
     </header>
-    <section class="hero" id="hero"></section>
+
+    <section class="Test">
+      <div class="container" id="quiz">
+        <div class="quiz">
+          <div class="quiz-header">
+            <h1>Technical Test</h1>
+            <h3 class="question-num">Quiz NUMBER</h3>
+            <p id="question">Question text</p>
+            <div class="answer-part">
+              <ul>
+                <li>
+                  <input type="radio" name="answer" id="a" class="answer">
+                  <label for="a" id="a_text">Question</label>
+                </li>
+      
+                <li>
+                  <input type="radio" name="answer" id="b" class="answer">
+                  <label for="b" id="b_text">Question</label>
+                </li>
+      
+                <li>
+                  <input type="radio" name="answer" id="c" class="answer">
+                  <label for="c" id="c_text">Question</label>
+                </li>
+      
+                <li>
+                  <input type="radio" name="answer" id="d" class="answer">
+                  <label for="d" id="d_text">Question</label>
+                </li>
+              </ul>
+              <span id="next"><i class="fa-solid fa-chevron-right next"></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="status.html" class="finishBtn hidden"
+      >Go next <i class="fa-solid fa-arrow-right submit-page"></i
+    ></a>
+    </section>
+
+
+
+    </section>
     <footer>
       <div class="footer container flex" id="footer">
         <a href="" class="logo flex">
@@ -61,5 +104,6 @@
         </ul>
       </div>
     </footer>
+    <script src="js/techTest.js" type="module"></script>
   </body>
 </html>
