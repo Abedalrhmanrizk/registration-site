@@ -54,13 +54,12 @@ nextBtnT.addEventListener('click', () => {
         }
         currentQuiz++
 
-        if (currentQuiz < 3) {
+        if (currentQuiz < 10) {
             qn.textContent = `Question ${currentQuiz +1}`
             loadQuiz()
         } else {
             nextBtnT.classList.add('hidden');
             finishBtn.classList.remove('hidden');
-            console.log(score);
         }
     }
 })

@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
     <title>Home</title>
     <link rel="stylesheet" href="./styles/utility.css" />
     <link rel="stylesheet" href="./styles/style.css" />
@@ -19,19 +22,37 @@
     <script src="./js/singup.js" defer></script>
   </head>
   <body>
-    <header class="container flex">
+    <header class="container flex header">
       <a href="" class="logo flex">
         <img src="images/logo.svg" alt="logo" />Quizzy</a
       >
-      <i class="fa-solid fa-bars"></i>
-      <nav class="nav">
-        <ul>
-          <li><a href="#">it works?</a></li>
-          <li><a href="#">Features</a></li>
-          <li><a href="#">About us</a></li>
-          <li><a href="#">Login</a></li>
+
+      <nav class="nav main-nav">
+        <ul class="main-nav-list">
+          <li>
+            <a href="#" class="main-nav-link">it works?</a>
+          </li>
+          <li>
+            <a href="#" class="main-nav-link">Features</a>
+          </li>
+          <li>
+            <a href="#" class="main-nav-link">About us</a>
+          </li>
+          <li>
+            <a href="#" class="main-nav-link">Login</a>
+          </li>
         </ul>
       </nav>
+      <button class="btn-mobile-nav">
+        <i
+          class="fa-solid fa-bars icon-mobile-nav"
+          name="menu-outline"
+        ></i>
+        <i
+          class="fa-solid fa-xmark icon-mobile-nav"
+          name="close-outline"
+        ></i>
+      </button>
     </header>
     <section class="login" id="login">
       <div class="container">
@@ -41,11 +62,23 @@
               <h2>Hello!</h2>
               <p>Sign Up to get started</p>
             </div>
-            <input type="text" placeholder="Full Name" id="name" />
+            <input
+              type="text"
+              placeholder="Full Name"
+              id="name"
+            />
             <span class="error-name"></span>
-            <input type="email" placeholder="Email Address" id="email" />
+            <input
+              type="email"
+              placeholder="Email Address"
+              id="email"
+            />
             <span class="error-email"></span>
-            <input type="password" placeholder="Password" id="password" />
+            <input
+              type="password"
+              placeholder="Password"
+              id="password"
+            />
             <span class="error-password"></span>
             <input
               type="password"
@@ -53,7 +86,12 @@
               id="re-password"
             />
             <span class="error-passwRep"></span>
-            <input type="submit" class="submit" value="Register" id="submit" />
+            <input
+              type="submit"
+              class="submit"
+              value="Register"
+              id="submit"
+            />
             <!-- <img src="images/Vector 5.svg" class="vector" alt="" /> -->
           </div>
           <!-- <div>
@@ -71,22 +109,30 @@
         <ul>
           <li>
             <a href=""
-              ><img src="images/dribbble.svg" alt="social media icons"
+              ><img
+                src="images/dribbble.svg"
+                alt="social media icons"
             /></a>
           </li>
           <li>
             <a href=""
-              ><img src="images/twitter.svg" alt="social media icons"
+              ><img
+                src="images/twitter.svg"
+                alt="social media icons"
             /></a>
           </li>
           <li>
             <a href=""
-              ><img src="images/linkedin.svg" alt="social media icons"
+              ><img
+                src="images/linkedin.svg"
+                alt="social media icons"
             /></a>
           </li>
           <li>
             <a href=""
-              ><img src="images/instagram.svg" alt="social media icons"
+              ><img
+                src="images/instagram.svg"
+                alt="social media icons"
             /></a>
           </li>
         </ul>
