@@ -16,9 +16,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <script src="./script.js" defer></script>
+    <!-- <script src="./script.js" defer></script> -->
     <script src="./englishscript.js" defer></script>
-
   </head>
   <body>
     <header class="container">
@@ -40,7 +39,8 @@
       <div class="container">
         <div class="quiz">
           <h1>English test</h1>
-          <h3>Quiz NUMBER</h3>
+          <div id="quiz-timer"></div>
+          <h3 id="q-number"></h3>
           <p id="question">
             Fill in the data for profile. It will take a couple of minutes. You
             only need a passport
@@ -91,7 +91,7 @@
                 <label for="d" id="d_text">Question</label>
               </li>
             </ul>
-            <span><i class="fa-solid fa-chevron-right next"></i></span>
+            <span id="next_btn"><i class="fa-solid fa-chevron-right"></i></span>
           </div>
         </div>
       </div>

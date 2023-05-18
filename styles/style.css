@@ -10,11 +10,11 @@
   font-size: 12px;
   padding-left: 5px;
 }
-/* Error vaild */ 
-.container-login span i{
+/* Error vaild */
+.container-login span i {
   padding-right: 1rem;
 }
-/* Error vaild */ 
+/* Error vaild */
 
 header {
   display: flex;
@@ -385,6 +385,10 @@ footer ul {
   margin: 0;
 }
 
+.quiz #quiz-timer {
+  font-size: 2rem;
+  font-weight: 800;
+}
 .Test h1 {
   font-size: 2rem;
   font-weight: 600;
