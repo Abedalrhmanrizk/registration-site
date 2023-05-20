@@ -79,7 +79,7 @@ const quizData = [
     question:
       "What is the correct spelling of the color that is a mixture of blue and yellow?",
     a: "grean",
-    b: "yelow",
+    b: "yellow",
     c: "green",
     d: "bluy",
     correct: "c",
