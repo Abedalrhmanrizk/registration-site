@@ -403,6 +403,10 @@ footer ul {
   margin: 0;
 }
 
+.quiz #quiz-timer {
+  font-size: 2rem;
+  font-weight: 800;
+}
 .Test h1 {
   font-size: 2rem;
   font-weight: 600;

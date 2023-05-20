@@ -1,65 +1,68 @@
-// localStorage.setItem("username", "mkyong-100@yahoo.com");
-// localStorage.setItem("password", "Anj1G@de");
+// LOGIN ELEMENTS
+const emailInputLog = document.getElementById("email-log");
+const passwordInputLog = document.getElementById("password-log");
+const submitBtnLog = document.getElementById("submit-log");
 
- 
-// form.addEventListener("submit", (e) => {
-//   e.preventDefault();
+// ERROR SPAN
+let spanEmail = document.querySelector(".error-email");
+let spanPass = document.querySelector(".error-password");
 
+submitBtnLog.addEventListener("click", (ele) => {
+  ele.preventDefault();
 
-//   const username = form.username.value;
-//   const password = form.password.value;
+  // DELETE TEXT ERROR
+  spanEmail.textContent = "";
+  spanPass.textContent = "";
 
-//   const authenticated = authentication(username, password);
+  // input value from user
+  const username = emailInputLog.value;
+  const password = passwordInputLog.value;
 
-//   if (username && password) {
-//     if (authenticated) {
-//       window.location.href = "logout.html";
-//     } else {
-//       // alert("wrong");
-//       spanEmail.textContent = "Incorrect email or password"; 
-//     }
-//   }else {
-//     // alert("wrong");
-//     spanEmail.textContent = "This is a field is required"; 
-//     spanPass.textContent = "This is a field is required";
-//   }
-// });
+  // function to check if email or pass registered
+  const authenticated = authentication(username, password);
 
-const Data = JSON.parse(localStorage.getItem('Data'));
-console.log(localStorage.getItem('Data'));
+  if (username && password) {
+    if (authenticated) {
+      window.location.href = "status.html";
+    } else {
+      let taskE = document.createTextNode(
+        "! Invalid email or password. Please make sure your email and password are correct"
+      );
+      spanEmail.appendChild(taskE);
+    }
+  } else {
+    if (password == "" && username == "") {
+      let text1 = document.createTextNode(" ! This is a field is required");
+      spanEmail.appendChild(text1);
 
-let arrData = Data;
+      let text = document.createTextNode(" ! This is a field is required");
+      spanPass.appendChild(text);
+    } else if (password == "") {
+      let text = document.createTextNode(" ! This is a field is required");
+      spanPass.appendChild(text);
+    } else if (username == "") {
+      let text1 = document.createTextNode(" ! This is a field is required");
+      spanEmail.appendChild(text1);
+    }
+  }
+});
+
+let arrData = JSON.parse(localStorage.getItem("Data"));
+
 console.log(arrData);
 
+function authentication(username, password) {
+  for (let i = 0; i < arrData.length; ++i) {
+    // CHECK EMAIL AND PASSWORD IS YES RETURN TRUE
+    if (
+      username === arrData[i].emailInputRegi &&
+      password === arrData[i].passwordInputRegi
+    ) {
+      sessionStorage.setItem("index", i);
+      return true;
+    }
+  }
+}
 
-
-// function authentication(username, password) {
-//   let trueName = "";
-//   let truePass = "";
-
-//   if (username && password) {
-//     for (let i = 0; i < arr_userName.length; ++i) {
-//       if (arr_userName[i] === username) {
-//         trueName = "Yes";
-//         break;
-//       } 
-//     }
-
-//     for (let i = 0; i < arr_pass.length; ++i) {
-//       if (arr_pass[i] === password) {
-//         truePass = "Yes";
-//         break;
-//        }
-//     }
-
-//     if (trueName === "Yes" && truePass === "Yes") {
-//       return true;
-//     } else {
-//       return false;
-//     }
-//   } else {
-//     spanEmail.textContent = "The email does not exist"; 
-//     spanPass.textContent = "";
-//   }
-// }
- 
+let index = sessionStorage.getItem("index");
+console.log(index);

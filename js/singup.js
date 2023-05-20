@@ -136,5 +136,4 @@ submitBtnRegi.addEventListener("click", (e) => {
 
 
 
-
-
+ 

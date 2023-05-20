@@ -15,10 +15,14 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <script src="./js/singin.js" defer></script>
+
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/utility.css" />
     <link rel="stylesheet" href="./sign-style.css" />
-    <script src="./script.js" defer></script>
+   
+
   </head>
   <body>
     <header class="container flex header">
@@ -61,16 +65,10 @@
               <h2>Hello!</h2>
               <p>Welcome Back</p>
             </div>
-            <input
-              type="email"
-              placeholder="Email Address"
-              id="email-log"
-            />
-            <input
-              type="password"
-              placeholder="Password"
-              id="password-log"
-            />
+            <input type="email" placeholder="Email Address" id="email-log" />
+            <span class="error-email"></span>
+            <input type="password" placeholder="Password" id="password-log" />
+            <span class="error-password"></span>
             <input
               type="submit"
               class="submit"
