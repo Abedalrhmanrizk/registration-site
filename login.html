@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
     <title>Home</title>
-    <link rel="stylesheet" href="./styles/utility.css" />
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./sign-style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -15,22 +15,47 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
     <script src="./js/singin.js" defer></script>
+
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/utility.css" />
+    <link rel="stylesheet" href="./sign-style.css" />
+   
+
   </head>
   <body>
-    <header class="container">
+    <header class="container flex header">
       <a href="" class="logo flex">
         <img src="images/logo.svg" alt="logo" />Quizzy</a
       >
-      <i class="fa-solid fa-bars"></i>
-      <nav class="nav">
-        <ul>
-          <li><a href="#">it works?</a></li>
-          <li><a href="#">Features</a></li>
-          <li><a href="#">About us</a></li>
-          <li><a href="#" class="login-btn">Login</a></li>
+
+      <nav class="nav main-nav">
+        <ul class="main-nav-list">
+          <li>
+            <a href="#" class="main-nav-link">it works?</a>
+          </li>
+          <li>
+            <a href="#" class="main-nav-link">Features</a>
+          </li>
+          <li>
+            <a href="#" class="main-nav-link">About us</a>
+          </li>
+          <li>
+            <a href="#" class="main-nav-link">Login</a>
+          </li>
         </ul>
       </nav>
+      <button class="btn-mobile-nav">
+        <i
+          class="fa-solid fa-bars icon-mobile-nav"
+          name="menu-outline"
+        ></i>
+        <i
+          class="fa-solid fa-xmark icon-mobile-nav"
+          name="close-outline"
+        ></i>
+      </button>
     </header>
     <section class="login" id="login">
       <div class="container">
@@ -63,22 +88,30 @@
         <ul>
           <li>
             <a href=""
-              ><img src="images/dribbble.svg" alt="social media icons"
+              ><img
+                src="images/dribbble.svg"
+                alt="social media icons"
             /></a>
           </li>
           <li>
             <a href=""
-              ><img src="images/twitter.svg" alt="social media icons"
+              ><img
+                src="images/twitter.svg"
+                alt="social media icons"
             /></a>
           </li>
           <li>
             <a href=""
-              ><img src="images/linkedin.svg" alt="social media icons"
+              ><img
+                src="images/linkedin.svg"
+                alt="social media icons"
             /></a>
           </li>
           <li>
             <a href=""
-              ><img src="images/instagram.svg" alt="social media icons"
+              ><img
+                src="images/instagram.svg"
+                alt="social media icons"
             /></a>
           </li>
         </ul>
