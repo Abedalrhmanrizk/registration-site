@@ -28,7 +28,6 @@ let Data = JSON.parse(localStorage.getItem("Data"))
 
 // STATUS PAGE
 const infoBtn = document.querySelector(".btn-apply-info")
-console.log(infoBtn)
 const englishBtn = document.querySelector(
   ".btn-apply-english"
 )
@@ -39,7 +38,7 @@ const logout = document.querySelector(".logout")
 const submitPage = document.querySelector(".submit-page")
 
 if (Data[index].profile !== "") {
-  infoBtn.textContent = "Done"
+  infoBtn.textContent = "completed"
   infoBtn.classList.remove("cursor")
 } else {
   infoBtn.addEventListener("click", function () {
@@ -48,7 +47,7 @@ if (Data[index].profile !== "") {
 }
 
 if (Data[index].taskE !== "") {
-  englishBtn.textContent = "Done"
+  englishBtn.textContent = "completed"
   englishBtn.classList.remove("cursor")
 } else {
   englishBtn.addEventListener("click", function () {
@@ -57,7 +56,7 @@ if (Data[index].taskE !== "") {
 }
 
 if (Data[index].taskT !== "") {
-  technicalBtn.textContent = "Done"
+  technicalBtn.textContent = "completed"
   technicalBtn.classList.remove("cursor")
 } else {
   technicalBtn.addEventListener("click", function () {
@@ -72,6 +71,9 @@ logout.addEventListener("click", function () {
 let table = document.querySelector(".table")
 let hero = document.querySelector(".hero")
 let x = document.querySelector(".x")
+let showTable = document.querySelector(".showTable")
+
+
 
 if (
   Data[index].taskE !== "" &&
@@ -80,27 +82,27 @@ if (
   Data[index].answerAll == ""
 ) {
   x.classList.remove("hidden")
+  Data[index].answerAll = "Done"
+  showTable.innerHTML = `
+    <tr>
+      <th>${Data[index].nameInput}</th>
+      <td>${Data[index].emailInputRegi}</td>
+      <td>${Data[index].education}</td>
+      <td>${Data[index].personalData}</td>
+      <td>${Data[index].taskE} / 15</td>
+      <td>${Data[index].taskT} / 10</td>
+    </tr>
+  `;  
 }
 
-if (Data[index].answerAll === "") {
+if (Data[index].answerAll == "") {
   x.addEventListener("click", () => {
-    Data[index].answerAll = "Done"
-    // if (
-    //   Data[index].taskE !== "" &&
-    //   Data[index].profile !== "" &&
-    //   Data[index].taskT !== ""
-    // ) {
-    // }
     table.classList.remove("hidden")
     hero.classList.add("hidden")
+    x.remove()
   })
 } else {
   table.classList.remove("hidden")
   hero.classList.add("hidden")
   x.remove()
 }
-
-// if (Data[index].answerAll) {
-//   table.classList.remove("hidden")
-//   hero.classList.add("hidden")
-// }
