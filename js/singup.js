@@ -1,5 +1,5 @@
-// localStorage.setItem("username", "mkyong-100@yahoo.com");
-// localStorage.setItem("password", "Anj1G@de");
+// username => mkyong-100@yahoo.com 
+// password => gr3at@3wdsG 
 
 // REGISTRATION ELEMENTS
 const nameInput = document.getElementById("name");
@@ -10,7 +10,11 @@ const submitBtnRegi = document.getElementById("submit");
 
 // REGX CHECK
 let checkEmail = "[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,3}";
+<<<<<<< HEAD
 let checkPass = "/^(?=.d)(?=.[!@#$%^&])(?=.[a-z])(?=.*[A-Z]).{8,}$/";
+=======
+let checkPass = "^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*-]).{8,}$";
+>>>>>>> 8bd0c76cd7e134b872fe9dd35e653c75d0afe7d9
 
 // ERROR SPAN
 let spanName = document.querySelector(".error-name");
@@ -62,10 +66,34 @@ submitBtnRegi.addEventListener("click", (e) => {
             localStorage.setItem("Data", JSON.stringify(data));
           }
 
+<<<<<<< HEAD
           // CHECK VALID EMAIL
           for (const ele of data) {
             if (ele.emailInputRegi == emailInputRegi.value) {
               return;
+=======
+                    // CHECK VALID EMAIL 
+                    for (const ele of data) {
+                        if (ele.emailInputRegi == emailInputRegi.value) {
+                            return;
+                        }
+                    }
+                    // INSERT DATA
+                    data.push(obj);
+                    localStorage.setItem('Data', JSON.stringify(data));
+ 
+                } else {// VALIDATION CHECK PASSWORD === PASSWORDREP
+                    let text = document.createTextNode("Passwords do not match");
+                    error.appendChild(text);
+                    spanPass.appendChild(error);
+                    spanPass.appendChild(text);
+                }
+            } else {// VALIDATION CHECK REGX PASSWORD
+                let text1 = document.createTextNode("It must contain an uppercase and lowercase letter and a number");
+                warning.appendChild(text1);
+                spanPass.appendChild(warning);
+                spanPass.appendChild(text1);
+>>>>>>> 8bd0c76cd7e134b872fe9dd35e653c75d0afe7d9
             }
           }
           // INSERT DATA
