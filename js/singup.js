@@ -42,7 +42,11 @@ submitBtnRegi.addEventListener("click", (e) => {
                         nameInput: nameInput.value,
                         emailInputRegi: emailInputRegi.value,
                         passwordInputRegi: passwordInputRegi.value,
-                        data: "",
+                        profile : "",
+                        firstName : "",
+                        secondName : "",
+                        personalData : "",
+                        education : "",
                         taskT: "",
                         taskE: "",
                     }
@@ -54,21 +58,23 @@ submitBtnRegi.addEventListener("click", (e) => {
 
                     // SET LOCALSTORAGE DATA 
                     let data = JSON.parse(localStorage.getItem('Data'));
-                    if (data.length == 0) {
-                        data.push(obj);
-                        localStorage.setItem('Data', JSON.stringify(data));
-                    }
-
+                    
                     // CHECK VALID EMAIL 
                     for (const ele of data) {
                         if (ele.emailInputRegi == emailInputRegi.value) {
+                            let text1 = document.createTextNode("This email is already in use");
+                            error.appendChild(text1);
+                            spanEmail.appendChild(warning);
+                            spanEmail.appendChild(text1);
                             return;
                         }
                     }
                     // INSERT DATA
                     data.push(obj);
                     localStorage.setItem('Data', JSON.stringify(data));
- 
+                    window.location.href = "../login.html";
+
+
                 } else {// VALIDATION CHECK PASSWORD === PASSWORDREP
                     let text = document.createTextNode("Passwords do not match");
                     error.appendChild(text);
