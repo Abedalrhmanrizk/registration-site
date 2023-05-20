@@ -7,7 +7,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <title>Home</title>
+    <title>Status</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -18,41 +18,70 @@
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/utility.css" />
     <script src="./script.js" defer></script>
+    <script src="./animat.js"></script>
+
+    <style>
+      body {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+    </style>
   </head>
   <body>
-    <header class="container flex header">
-      <a href="" class="logo flex">
-        <img src="images/logo.svg" alt="logo" />Quizzy</a
-      >
+    <div class="loader"></div>
+    <header>
+      <div class="container flex aling-center">
+        <div class="logo flex">
+          <a
+            href="./index.html"
+            class="logo flex aling-center"
+          >
+            <img
+              src="images/logo.svg"
+              alt="logo"
+            />Quizzy</a
+          >
+        </div>
 
-      <nav class="nav main-nav">
-        <ul class="main-nav-list">
-          <li>
-            <a href="#" class="main-nav-link">it works?</a>
-          </li>
-          <li>
-            <a href="#" class="main-nav-link">Features</a>
-          </li>
-          <li>
-            <a href="#" class="main-nav-link">About us</a>
-          </li>
-          <li>
-            <a href="#" class="main-nav-link logout"
-              >Login</a
-            >
-          </li>
-        </ul>
-      </nav>
-      <button class="btn-mobile-nav">
-        <i
-          class="fa-solid fa-bars icon-mobile-nav"
-          name="menu-outline"
-        ></i>
-        <i
-          class="fa-solid fa-xmark icon-mobile-nav"
-          name="close-outline"
-        ></i>
-      </button>
+        <nav class="nav main-nav">
+          <ul class="main-nav-list">
+            <li>
+              <a
+                href="./index.html"
+                class="main-nav-link link"
+                >HOME</a
+              >
+            </li>
+            <li>
+              <a href="#" class="main-nav-link link"
+                >Features</a
+              >
+            </li>
+            <li>
+              <a href="#" class="main-nav-link link"
+                >About us</a
+              >
+            </li>
+            <li>
+              <a href="#" class="main-nav-link logout"
+                >Logout</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <button class="btn-mobile-nav">
+          <i
+            class="fa-solid fa-bars icon-mobile-nav"
+            name="menu-outline"
+          ></i>
+          <i
+            class="fa-solid fa-xmark icon-mobile-nav"
+            name="close-outline"
+          ></i>
+        </button>
+      </div>
     </header>
     <section class="hero" id="hero">
       <div class="container">
@@ -62,7 +91,6 @@
           <div class="card">
             <div class="cardInfo">
               <h3>Profile info</h3>
-              <p>Google - 160 Amphitheatre Parkway</p>
             </div>
             <button
               class="btn btn-apply btn-apply-info cursor"
@@ -74,7 +102,6 @@
           <div class="card">
             <div class="cardInfo">
               <h3>English test</h3>
-              <p>Google - 160 Amphitheatre Parkway</p>
             </div>
             <button
               class="btn btn-apply btn-apply-english cursor"
@@ -85,7 +112,6 @@
           <div class="card">
             <div class="cardInfo">
               <h3>Technical test</h3>
-              <p>Google - 160 Amphitheatre Parkway</p>
             </div>
 
             <button
@@ -97,12 +123,10 @@
         </div>
       </div>
     </section>
-    <button class="x hidden">SUBMIT</button>
+    <button class="submit-all hidden">SUBMIT</button>
 
     <section class="table hidden">
       <div class="container">
-        <h3>SCORE</h3>
-
         <table>
           <thead>
             <tr>
@@ -114,15 +138,13 @@
               <th>Technical Result</th>
             </tr>
           </thead>
-          <tbody class="showTable">
- 
-          </tbody>
+          <tbody class="showTable"></tbody>
         </table>
       </div>
     </section>
 
     <footer>
-      <div class="footer container flex" id="footer">
+      <div class="footer container flex">
         <a href="" class="logo flex">
           <img src="images/logo.svg" alt="logo" />Quizzy</a
         >

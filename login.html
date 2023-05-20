@@ -21,42 +21,72 @@
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/utility.css" />
     <link rel="stylesheet" href="./sign-style.css" />
-   
+    <script src="./animat.js"></script>
 
+    <style>
+      body {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+    </style>
   </head>
   <body>
-    <header class="container flex header">
-      <a href="" class="logo flex">
-        <img src="images/logo.svg" alt="logo" />Quizzy</a
-      >
+    <header>
+      <div class="loader"></div>
+      <div class="container flex aling-center">
+        <div class="logo flex">
+          <a
+            href="./index.html"
+            class="logo flex aling-center"
+          >
+            <img
+              src="images/logo.svg"
+              alt="logo"
+            />Quizzy</a
+          >
+        </div>
 
-      <nav class="nav main-nav">
-        <ul class="main-nav-list">
-          <li>
-            <a href="#" class="main-nav-link">it works?</a>
-          </li>
-          <li>
-            <a href="#" class="main-nav-link">Features</a>
-          </li>
-          <li>
-            <a href="#" class="main-nav-link">About us</a>
-          </li>
-          <li>
-            <a href="#" class="main-nav-link">Login</a>
-          </li>
-        </ul>
-      </nav>
-      <button class="btn-mobile-nav">
-        <i
-          class="fa-solid fa-bars icon-mobile-nav"
-          name="menu-outline"
-        ></i>
-        <i
-          class="fa-solid fa-xmark icon-mobile-nav"
-          name="close-outline"
-        ></i>
-      </button>
+        <nav class="nav main-nav">
+          <ul class="main-nav-list">
+            <li>
+              <a
+                href="./index.html"
+                class="main-nav-link link"
+                >HOME</a
+              >
+            </li>
+            <li>
+              <a href="#" class="main-nav-link link"
+                >Features</a
+              >
+            </li>
+            <li>
+              <a href="#" class="main-nav-link link"
+                >About us</a
+              >
+            </li>
+            <li>
+              <a href="./login.html" class="main-nav-link"
+                >Login</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <button class="btn-mobile-nav">
+          <i
+            class="fa-solid fa-bars icon-mobile-nav"
+            name="menu-outline"
+          ></i>
+          <i
+            class="fa-solid fa-xmark icon-mobile-nav"
+            name="close-outline"
+          ></i>
+        </button>
+      </div>
     </header>
+
     <section class="login" id="login">
       <div class="container">
         <div class="container-login">
@@ -65,11 +95,21 @@
               <h2>Hello!</h2>
               <p>Welcome Back</p>
             </div>
-            <input type="email" placeholder="Email Address" id="email-log" />
-            <span class="error-email"></span>
-            <input type="password" placeholder="Password" id="password-log" />
-            <span class="error-password"></span>
             <input
+              type="email"
+              placeholder="Email Address"
+              id="email-log"
+            />
+            <span class="error-email"></span>
+            <input
+              type="password"
+              placeholder="Password"
+              id="password-log"
+            />
+            <span class="error-password"></span>
+
+            <input
+              class="btn"
               type="submit"
               class="submit"
               value="Log In"
@@ -80,8 +120,9 @@
         </div>
       </div>
     </section>
+
     <footer>
-      <div class="footer container flex" id="footer">
+      <div class="footer container flex">
         <a href="" class="logo flex">
           <img src="images/logo.svg" alt="logo" />Quizzy</a
         >

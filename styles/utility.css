@@ -1,6 +1,6 @@
 /* import fonts */
 @import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800;900&display=swap");
 /* colors and fonts variables */
 :root {
   --main-font: "Poppins", sans-serif;
@@ -42,6 +42,7 @@ button,
 textarea,
 select {
   font: inherit;
+  border-radius: 5px;
 }
 
 p,
@@ -55,9 +56,41 @@ h6 {
   overflow-wrap: break-word;
 }
 
+a {
+  text-decoration: none;
+}
+
+.btn {
+  box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.6s;
+  border-radius: 5px;
+}
+.btn:hover {
+  box-shadow: none;
+  transform: scale(0.98);
+}
 /* public class */
 .flex {
   display: flex;
+}
+.aling-center {
+  align-items: center;
+}
+
+.gap-5 {
+  gap: 5rem;
+}
+.gap-4 {
+  gap: 4rem;
+}
+.gap-3 {
+  gap: 3rem;
+}
+.gap-2 {
+  gap: 2rem;
+}
+.gap-1 {
+  gap: 1rem;
 }
 
 .hidden {
@@ -70,6 +103,9 @@ h6 {
   padding: 0 15px;
 }
 
+body {
+  font-family: var(--main-font);
+}
 /*ssss*/
 
 /* Large */
@@ -183,14 +219,61 @@ h6 {
 }
 
 html {
-  overflow-x: hidden ;
+  overflow-x: hidden;
 }
-body{
+body {
   overflow-x: hidden;
   position: relative;
 }
 
-
 /* header{
   position: fixed;
 } */
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eee;
+  transition: opacity 1s, visibility 1s;
+  z-index: 1;
+}
+
+.loader--hidden {
+  opacity: 1;
+  visibility: hidden;
+}
+
+.loader::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  border: 5px solid #dddddd;
+  border-top-color: var(--main-color);
+  border-radius: 50%;
+  animation: loading 1s ease infinite;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+.active {
+  color: var(--main-color);
+  font-weight: 600;
+}
+
+input[type="text"] {
+  background-color: #fdfdfd !important;
+  border: 1px solid #555;
+}
