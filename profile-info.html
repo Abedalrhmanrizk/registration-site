@@ -11,8 +11,8 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./styles/style.css" />
   <link rel="stylesheet" href="./styles/utility.css" />
-  <script src="./script.js" defer></script>
-  <script src="./profile-info.js" defer></script>
+  <!-- <script src="./script.js" defer></script> -->
+  <script src="./js/profile-info.js" defer></script>
 </head>
 
 <body>
@@ -68,24 +68,32 @@
           <input type="checkbox" id="agree" />
           <label for="agree">
             I agree with
-            <a href="#">Terms of use</a></label>
+            <a href="#">Terms of use</a>
+          
+          </label>
+          <span class="error-checkbox" style="color: red"></span>
+
         </div>
 
-        <form action="">
+        <form action="" class="form">
           <h5>Personal data</h5>
           <p>Specify exactly as in your passport</p>
           <label for="">First name</label>
-          <input type="text" class="profile-first-name" />
+          <input type="text" id="First"/>
+          <span class="error-First"></span>
           <label for="">Second name</label>
-          <input type="text" class="profile-second-name" />
+          <input type="text"  id="Second"/>
+          <span class="error-Second"></span>
           <label for="">Date of Birth</label>
-          <input type="date" class="profile-date" />
+          <input type="date" id="Birth"/>
+          <span class="error-Birth"></span>
           <label for=""> education level</label>
-          <input type="text" class="profile-education" />
+          <input type="text" id="education"/>
+          <span class="error-education"></span>
         </form>
-        <button href="#" class="profile-submit">
+        <button href="#" class="profile-submit btn-apply-info submit-page" >
           Go next
-          <i class="fa-solid fa-arrow-right submit-page"></i>
+          <i class="fa-solid fa-arrow-right "></i>
         </button>
       </div>
     </div>

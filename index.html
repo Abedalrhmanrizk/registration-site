@@ -17,40 +17,69 @@
     />
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/utility.css" />
-    <script src="./script.js" defer></script>
+    <script src="./animat.js"></script>
   </head>
+  <style>
+    body {
+      display: flex;
+      min-height: 100vh;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  </style>
   <body>
-    <header class="container flex header">
-      <a href="" class="logo flex">
-        <img src="images/logo.svg" alt="logo" />Quizzy</a
-      >
+    <div class="loader"></div>
+    <header>
+      <div class="container flex aling-center">
+        <div class="logo flex">
+          <a
+            href="./index.html"
+            class="logo flex aling-center"
+          >
+            <img
+              src="images/logo.svg"
+              alt="logo"
+            />Quizzy</a
+          >
+        </div>
 
-      <nav class="nav main-nav">
-        <ul class="main-nav-list">
-          <li>
-            <a href="#" class="main-nav-link">it works?</a>
-          </li>
-          <li>
-            <a href="#" class="main-nav-link">Features</a>
-          </li>
-          <li>
-            <a href="#" class="main-nav-link">About us</a>
-          </li>
-          <li>
-            <a href="#" class="main-nav-link">Login</a>
-          </li>
-        </ul>
-      </nav>
-      <button class="btn-mobile-nav">
-        <i
-          class="fa-solid fa-bars icon-mobile-nav"
-          name="menu-outline"
-        ></i>
-        <i
-          class="fa-solid fa-xmark icon-mobile-nav"
-          name="close-outline"
-        ></i>
-      </button>
+        <nav class="nav main-nav">
+          <ul class="main-nav-list">
+            <li>
+              <a
+                href="./index.html"
+                class="main-nav-link link active"
+                >HOME</a
+              >
+            </li>
+            <li>
+              <a href="#" class="main-nav-link link"
+                >Features</a
+              >
+            </li>
+            <li>
+              <a href="#" class="main-nav-link link"
+                >About us</a
+              >
+            </li>
+            <li>
+              <a href="./login.html" class="main-nav-link"
+                >Login</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <button class="btn-mobile-nav">
+          <i
+            class="fa-solid fa-bars icon-mobile-nav"
+            name="menu-outline"
+          ></i>
+          <i
+            class="fa-solid fa-xmark icon-mobile-nav"
+            name="close-outline"
+          ></i>
+        </button>
+      </div>
     </header>
 
     <main>
@@ -62,28 +91,34 @@
               <p>
                 We help you prepare for exams and quizes
               </p>
-              <div class="btn flex">
-                <button class="btn">Start solving</button>
-                <button class="btn know-more flex">
-                  <i class="fa-solid fa-sort-down"></i> know
-                  more
-                </button>
+              <div class="flex gap-1">
+                <a href="./signup.html" class="btn"
+                  >Sign up</a
+                >
+                <a
+                  class="btn know-more flex gap-1 al aling-center"
+                >
+                  Know more
+                  <i class="fa-solid fa-sort-down"></i>
+                </a>
               </div>
             </div>
             <div class="right col">
               <img
-                src="img/Illusttration.svg"
+                src="images/undraw_questions_re_1fy7.svg"
                 alt="hero-img"
               />
             </div>
           </div>
         </div>
       </section>
-      <section class="features" id="features"></section>
-      <section class="journey" id="journey"></section>
     </main>
+
+    <section class="features" id="features"></section>
+    <section class="journey" id="journey"></section>
+
     <footer>
-      <div class="footer container flex" id="footer">
+      <div class="footer container flex">
         <a href="" class="logo flex">
           <img src="images/logo.svg" alt="logo" />Quizzy</a
         >

@@ -1,37 +1,100 @@
-// NAVBAR ELEMENT
-const loginBtn = document.querySelector(".login-btn");
-
-// REGISTRATION ELEMENTS
-const nameInput = document.getElementById("name");
-const emailInputRegi = document.getElementById("email");
-const passwordInputRegi = document.getElementById("password");
-const rePassword = document.getElementById("re-password");
-const submitBtnRegi = document.getElementById("submit");
-
-//get input field
-let username = document.querySelector("#name");
-let email = document.querySelector("#email");
-let password = document.querySelector("#password");
-let passwordRep = document.querySelector("#passwRep");
-let submit = document.querySelector("#submit");
-
-// LOGIN ELEMENTS
-const emailInputLog = document.getElementById("email-log");
-const passwordInputLog = document.getElementById("password-log");
-const submitBtnLog = document.getElementById("submit-log");
-
-// ENGLISH TEST ELEMENTS
+// INDEX OF ARRAY USER
+let index = sessionStorage.getItem("index")
+let Data = JSON.parse(localStorage.getItem("Data"))
 
 // STATUS PAGE
-const infoBtn = document.querySelector(".btn-apply-info");
-const englishBtn = document.querySelector(".btn-apply-english");
-const technicalBtn = document.querySelector(".btn-apply-technical");
-const submitPage = document.querySelector(".submit-page");
+const infoBtn = document.querySelector(".btn-apply-info")
+const englishBtn = document.querySelector(
+  ".btn-apply-english"
+)
+const technicalBtn = document.querySelector(
+  ".btn-apply-technical"
+)
+const logout = document.querySelector(".logout")
+const submitPage = document.querySelector(".submit-page")
 
-// FOR MOBILE NAVBAR
-const btnNavEl = document.querySelector(".btn-mobile-nav");
-const headerEl = document.querySelector(".header");
+if (Data[index].profile !== "") {
+  infoBtn.textContent = "completed"
+  infoBtn.classList.remove("cursor")
+} else {
+  infoBtn.addEventListener("click", function () {
+    window.location.href = "./profile-info.html"
+  })
+}
 
-btnNavEl.addEventListener("click", function () {
-  headerEl.classList.toggle("nav-open");
-});
+if (Data[index].taskE !== "") {
+  englishBtn.textContent = "completed"
+  englishBtn.classList.remove("cursor")
+} else {
+  englishBtn.addEventListener("click", function () {
+    window.location.href = "./english-test.html"
+  })
+}
+
+if (Data[index].taskT !== "") {
+  technicalBtn.textContent = "completed"
+  technicalBtn.classList.remove("cursor")
+} else {
+  technicalBtn.addEventListener("click", function () {
+    window.location.href = "./technical-test.html"
+  })
+}
+
+logout.addEventListener("click", function () {
+  window.location.href = "./login.html"
+})
+
+let table = document.querySelector(".table")
+let hero = document.querySelector(".hero")
+let submitAll = document.querySelector(".submit-all")
+let showTable = document.querySelector(".showTable")
+
+// if (
+//   Data[index].taskE !== "" &&
+//   Data[index].profile !== "" &&
+//   Data[index].taskT !== "" &&
+//   Data[index].answerAll == ""
+// ) {
+
+// }
+
+if (
+  Data[index].taskE !== "" &&
+  Data[index].profile !== "" &&
+  Data[index].taskT !== "" &&
+  Data[index].answerAll == ""
+) {
+  submitAll.classList.remove("hidden")
+  submitAll.addEventListener("click", () => {
+    table.classList.remove("hidden")
+    hero.classList.add("hidden")
+    Data[index].answerAll = "Done"
+    submitAll.remove()
+    showTable.innerHTML = `
+    <tr>
+      <th>${Data[index].nameInput}</th>
+      <td>${Data[index].emailInputRegi}</td>
+      <td>${Data[index].education}</td>
+      <td>${Data[index].personalData}</td>
+      <td>${Data[index].taskE} / 15</td>
+      <td>${Data[index].taskT} / 10</td>
+    </tr>
+  `
+  })
+} else {
+  table.classList.remove("hidden")
+  hero.classList.add("hidden")
+  submitAll.remove()
+  submitAll.classList.remove("hidden")
+  Data[index].answerAll = "Done"
+  showTable.innerHTML = `
+    <tr>
+      <th>${Data[index].nameInput}</th>
+      <td>${Data[index].emailInputRegi}</td>
+      <td>${Data[index].education}</td>
+      <td>${Data[index].personalData}</td>
+      <td>${Data[index].taskE} / 15</td>
+      <td>${Data[index].taskT} / 10</td>
+    </tr>
+  `
+}

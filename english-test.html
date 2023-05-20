@@ -17,7 +17,7 @@
       referrerpolicy="no-referrer"
     />
     <!-- <script src="./script.js" defer></script> -->
-    <script src="./js/englishscript.js" defer></script>
+    <script src="./js/englishscript.js" type="module" defer></script>
   </head>
   <body>
     <header class="container">
@@ -39,7 +39,7 @@
       <div class="container">
         <div class="quiz">
           <h1>English test</h1>
-          <h3 id="quiz-timer"></h3>
+          <h3 id="quiz-timer">20:00</h3>
           <h3 id="q-number"></h3>
           <p id="question">
             Fill in the data for profile. It will take a couple of minutes. You
@@ -91,14 +91,14 @@
                 <label for="d" id="d_text">Question</label>
               </li>
             </ul>
-            <span id="next_btn"><i class="fa-solid fa-chevron-right"></i></span>
+            <span id="next_btn" class="next"><i class="fa-solid fa-chevron-right"></i></span>
           </div>
         </div>
       </div>
 
-      <a href="#"
-        >Go next <i class="fa-solid fa-arrow-right submit-page"></i
-      ></a>
+      <!-- <a href="#"
+        >Go next <i class="fa-solid fa-arrow-right submit-page finishBtn"></i
+      ></a> -->
     </section>
 
     <footer>
@@ -130,5 +130,6 @@
         </ul>
       </div>
     </footer>
+   
   </body>
 </html>
