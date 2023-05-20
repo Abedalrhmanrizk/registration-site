@@ -11,6 +11,8 @@ let inpSecond = document.querySelector("#Second");
 let inpBirth = document.querySelector("#Birth");
 let inpEducation = document.querySelector("#education");
 
+console.log(submitPage);
+
 //GET BOX SHOW VALIDATION 
 let checkbox = document.querySelector(".error-checkbox");
 let first = document.querySelector(".error-First");
@@ -90,4 +92,3 @@ submitPage.addEventListener("click", function () {
     }
 });
 
-console.log(Data);
