@@ -58,43 +58,83 @@ let showTable = document.querySelector(".showTable")
 
 // }
 
+// if (
+//   Data[index].taskE !== "" &&
+//   Data[index].profile !== "" &&
+//   Data[index].taskT !== "" &&
+//   Data[index].answerAll == ""
+// ) {
+//   submitAll.classList.remove("hidden")
+//   submitAll.addEventListener("click", () => {
+//     table.classList.remove("hidden")
+//     hero.classList.add("hidden")
+//     Data[index].answerAll = "Done"
+//     submitAll.remove()
+//     showTable.innerHTML = `
+//     <tr>
+//       <th>${Data[index].nameInput}</th>
+//       <td>${Data[index].emailInputRegi}</td>
+//       <td>${Data[index].education}</td>
+//       <td>${Data[index].personalData}</td>
+//       <td>${Data[index].taskE} / 15</td>
+//       <td>${Data[index].taskT} / 10</td>
+//     </tr>
+//   `
+//   })
+// } else {
+//   table.classList.remove("hidden")
+//   hero.classList.add("hidden")
+//   submitAll.remove()
+//   submitAll.classList.remove("hidden")
+//   Data[index].answerAll = "Done"
+//   showTable.innerHTML = `
+//     <tr>
+//       <th>${Data[index].nameInput}</th>
+//       <td>${Data[index].emailInputRegi}</td>
+//       <td>${Data[index].education}</td>
+//       <td>${Data[index].personalData}</td>
+//       <td>${Data[index].taskE} / 15</td>
+//       <td>${Data[index].taskT} / 10</td>
+//     </tr>
+//   `
+// }
+
 if (
+  Data[index].taskT !== "" &&
   Data[index].taskE !== "" &&
   Data[index].profile !== "" &&
-  Data[index].taskT !== "" &&
   Data[index].answerAll == ""
 ) {
   submitAll.classList.remove("hidden")
-  submitAll.addEventListener("click", () => {
-    table.classList.remove("hidden")
-    hero.classList.add("hidden")
-    Data[index].answerAll = "Done"
-    submitAll.remove()
-    showTable.innerHTML = `
-    <tr>
+}
+
+submitAll.addEventListener("click", () => {
+  Data[index].answerAll = "Done"
+  localStorage.removeItem("Data")
+  localStorage.setItem("Data", JSON.stringify(Data))
+  hero.classList.add("hidden")
+  table.classList.remove("hidden")
+  submitAll.remove()
+  showTable.innerHTML = `<tr>
       <th>${Data[index].nameInput}</th>
       <td>${Data[index].emailInputRegi}</td>
       <td>${Data[index].education}</td>
       <td>${Data[index].personalData}</td>
       <td>${Data[index].taskE} / 15</td>
       <td>${Data[index].taskT} / 10</td>
-    </tr>
-  `
-  })
-} else {
-  table.classList.remove("hidden")
+    </tr>`
+})
+
+if (Data[index].answerAll !== "") {
   hero.classList.add("hidden")
   submitAll.remove()
-  submitAll.classList.remove("hidden")
-  Data[index].answerAll = "Done"
-  showTable.innerHTML = `
-    <tr>
+  table.classList.remove("hidden")
+  showTable.innerHTML = `<tr>
       <th>${Data[index].nameInput}</th>
       <td>${Data[index].emailInputRegi}</td>
       <td>${Data[index].education}</td>
       <td>${Data[index].personalData}</td>
       <td>${Data[index].taskE} / 15</td>
       <td>${Data[index].taskT} / 10</td>
-    </tr>
-  `
+    </tr>`
 }

@@ -9,11 +9,10 @@ window.addEventListener("load", () => {
   })
 })
 
-// a.forEach((item) => {
-//   item.addEventListener("mouseover", () => {
-//     cursor.classList.add("hover")
-//   })
-//   item.addEventListener("mouseleave", () => {
-//     cursor.classList.remove("hover")
-//   })
-// })
+// FOR MOBILE NAVBAR
+const btnNavEl = document.querySelector(".btn-mobile-nav")
+const headerEl = document.querySelector(".header")
+
+btnNavEl.addEventListener("click", function () {
+  headerEl.classList.toggle("nav-open")
+})

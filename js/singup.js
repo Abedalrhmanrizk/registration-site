@@ -138,7 +138,7 @@ submitBtnRegi.addEventListener("click", (e) => {
     if (emailInputRegi.value === "") {
       let error = document.createElement("i")
       let text = document.createTextNode(
-        "⚠️ This field is required "
+        "This field is required "
       )
       error.setAttribute("class", "fa-solid fa-exclamation")
       spanEmail.appendChild(error)
@@ -148,7 +148,7 @@ submitBtnRegi.addEventListener("click", (e) => {
     if (passwordInputRegi.value === "") {
       let error = document.createElement("i")
       let text = document.createTextNode(
-        "⚠️ This field is required "
+        "This field is required "
       )
       error.setAttribute("class", "fa-solid fa-exclamation")
       spanPass.appendChild(error)
@@ -158,7 +158,7 @@ submitBtnRegi.addEventListener("click", (e) => {
     if (rePassword.value === "") {
       let error = document.createElement("i")
       let text = document.createTextNode(
-        "⚠️ This field is required "
+        "This field is required "
       )
       error.setAttribute("class", "fa-solid fa-exclamation")
       spanPassrep.appendChild(error)
