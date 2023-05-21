@@ -3,10 +3,10 @@ window.addEventListener("load", () => {
 
   loader.classList.add("loader--hidden")
 
-  loader.addEventListener("transitionend", () => {
-    // document.body.removeChild(loader)
-    loader.remove()
-  })
+  // loader.addEventListener("transitionend", () => {
+  //   // document.body.removeChild(loader)
+  //   loader.remove()
+  // })
 })
 
 // FOR MOBILE NAVBAR

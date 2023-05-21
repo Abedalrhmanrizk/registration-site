@@ -16,6 +16,7 @@ const submitPage = document.querySelector(".submit-page")
 if (Data[index].profile !== "") {
   infoBtn.textContent = "completed"
   infoBtn.classList.remove("cursor")
+  infoBtn.classList.add("democlass")
 } else {
   infoBtn.addEventListener("click", function () {
     window.location.href = "./profile-info.html"
@@ -25,6 +26,7 @@ if (Data[index].profile !== "") {
 if (Data[index].taskE !== "") {
   englishBtn.textContent = "completed"
   englishBtn.classList.remove("cursor")
+  englishBtn.classList.add("democlass")
 } else {
   englishBtn.addEventListener("click", function () {
     window.location.href = "./english-test.html"
@@ -34,6 +36,9 @@ if (Data[index].taskE !== "") {
 if (Data[index].taskT !== "") {
   technicalBtn.textContent = "completed"
   technicalBtn.classList.remove("cursor")
+  technicalBtn.classList.add("democlass")
+  
+  
 } else {
   technicalBtn.addEventListener("click", function () {
     window.location.href = "./technical-test.html"
@@ -138,3 +143,4 @@ if (Data[index].answerAll !== "") {
       <td>${Data[index].taskT} / 10</td>
     </tr>`
 }
+
